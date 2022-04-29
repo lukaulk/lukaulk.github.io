@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="icon.png"  >
-    <title>Lukau Lk - Desenvolvedor Web (SinglePage)</title>
+    <title>Łukau Łk - Desenvolvedor Web (SinglePage)</title>
 <!--
     
 LUKAULK
@@ -241,13 +241,21 @@ background:#008aed !important;
                             <h2>LukauLk  
                             </h2>
                         </div>
-                        <p><a>Eu sou um desenvolvedor web e estou preste a ser desenvolvedor mobile ,estou há <span class="anos" >3 anos</span> no mundo da programação e sou um desenvolvedor front-end eu adoro web development foi umas das iniciativa minha e este local é onde podes baixar e usar alguns dos meus framework, projectos e mais..., além da programação também adoro desenhar, animar,música e mais..
+                        <p><a>
+                          Hello, I'm a web developer, Javascript is my strong, I've been in the web development world for <span class="lk-year"></span>. Creation of Desktop Programs and Modeling for Video Games, Dynamic Web Pages, User Interface and User Experience Design
+                        <!--  Olá, Eu sou um desenvolvedor web, Javascript é o meu forte,
+                          estou há <span class="lk-year"></span> no mundo do desenvolvimento web.
+                          Criacão de Programas desktop e Modelagens para videojogos, Páginas Webs Dinâmicos,
+                          User interface e User Experience Design-->
+                          </p></a>
                         <br>
                         <h2>Ferramentas</h2>
                         <p><a>
-                        A ferramenta mais usada aqui é o BlueArival e o Gui que são os framework css mais recentes criados por mim.
-                        Mas um dos framework que eu mas usei e que me trouse até aqui é o <b>SlifeCss</b> que se eu não poderia ter a ideia de iniciar este framework css não poderia ser o mesmo de hoje por isso eu não quero excluir este framework é o este framework que me motiva que faz ir em frente.
-                        
+                          The most used tool here is BlueArival and Gui which are the most recent css frameworks created by me, but one of the frameworks that I used the most and that brought me here is <b>SlifeCss</b>.
+                      <!--
+                        A ferramenta mais usada aqui é o BlueArival e o Gui que são os framework css mais recentes criados por mim,
+                        Mas um dos framework que eu mas usei e que me trouxe até aqui é o <b>SlifeCss</b>
+-->
                         
             <div class="card-x" >
           
@@ -470,21 +478,20 @@ background:#008aed !important;
         </div>
         <ul><h7><a>Clica Na imagem a cima para visualizar melhor</a></h7></ul>
       </div>-->
-        <div class="menu-item-carousel">
+        <div class="menu-item-carousel" style="display: none">
             <div class="col-lg-12">
                 <div class="owl-menu-item owl-carousel">
                     <div class="item">
-                        <div class="card ba">
+                        <div class="card ba" onclick="window.location = '/lukaulk.github.io-main/GUI-1.1.1.zip">
                             <div class="price"><h6>50%</h6></div>
                             <div class='info'>
                               <h1 class='title'>BlueArival.css</h1>
                               <p class='description'>
-                           	Framework com components de Ui muito bonito e uso do materialDesign que é o ripple effect
-                         
-                              </p>
-                              <div class="main-text-button">
+                                  Framework Frontend para estilização  de páginas web de forma fácil e concisa, com interfaces interativas.
+                             ⁰ </p>
+                              <div class="main-text-button" >
                                   <div class="scroll-to-section">
-                          <a href="https://www.mediafire.com/download/9u4l9d5qobml53n" >Get Started / Download <i class="fas fa fa-angle-right" ></i></a>
+                          <a href="/lukaulk.github.io-main/GUI-1.1.1.zip" >Get Started / Download <i class="fas fa fa-angle-right" ></i></a>
                       
                               </div>
                             </div>
@@ -687,9 +694,13 @@ background:#008aed !important;
 var pr = document.querySelectorAll(".price h6");
 for(var j = 0;j < pr.length;j++){
 pr[j].onclick=function(){
-alert("Este Projecto Está em desenvolvimento á : " + this.textContent);
+alert("Este projecto está  em desenvolvimento á : " + this.textContent);
 }};
-alert("Atenção: Este site está em Desenvolvimento!");
+var lkYear = new Date().getFullYear() - 2019
+$(".lk-year").html("<b>"+lkYear+" years </b>")
+window.onload=function(){
+  window.alert("Atenção: Este site está em Desenvolvimento! Caso houver alguma anomalia, por favor entre em contacto com o Administrador da página  lukaulklk@gmail.com ");
+}
     </script>
   </body>
 </html>
